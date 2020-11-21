@@ -17,19 +17,31 @@ function buildBiodata(sample) {
     // Object.entries
 }
 
+function buildCharts(sample) {
+    // grab data
+    console.log("buildCharts output");
 
+    // build bar chart
+
+
+
+    // build bubble chart
+
+
+}
 
 
 
 
 // create an init function
 function init() {
+    console.log("start of init");
     // get a reference to selDataset
-
+    var selector = d3.select("#selDataset");
 
 
     // create a dropdown menu with names
-
+    d3.json("samples.json")
 
 
     // call functions;
