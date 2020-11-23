@@ -71,7 +71,22 @@ function buildCharts(sample) {
 //         }
 //         Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
-// };
+// };   
+
+//  single angular gauge chart
+    // var gaugeData = [
+        //     {
+        //     domain: {x: [0, 1], y: [0, 1]},
+        //     title: {text: "Belly Button Washing Frequency Per Week"},
+        //     type: "indicator",
+        //     mode: "gauge+number",
+        //     gauge: { axis: {range: [0-1, 8-9]}}
+        //     }
+        // ];
+
+        // var gaugeLayout = { width : 600, height: 400};
+        // Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+// 
 // ################################################################################
 // event listener from html file:<select id="selDataset" onchange="optionChanged(this.value)"></select>
 // build optionChanged function (nextSample = this value)
