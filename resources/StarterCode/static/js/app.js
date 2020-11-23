@@ -24,7 +24,7 @@ function buildMetadata(sample) {
 
     });
 
-}
+};
 
 function buildCharts(sample) {
     // grab data
@@ -90,6 +90,7 @@ function buildCharts(sample) {
 // ################################################################################
 // event listener from html file:<select id="selDataset" onchange="optionChanged(this.value)"></select>
 // build optionChanged function (nextSample = this value)
+
 function optionChanged(testSample) {
     // grab the data from selector; build using value
     buildMetadata(testSample);
@@ -132,7 +133,7 @@ function init() {
         buildCharts(testSample);
 
     });
-}
+};
 
 //call init function
 init();
