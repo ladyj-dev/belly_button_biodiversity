@@ -29,6 +29,7 @@ function buildMetadata(sample) {
 function buildCharts(sample) {
     // grab data
     console.log("buildCharts output");
+    // ############################################################
 
     // build bar chart; using plotly.com/javascript documentation as guide 
     // var barData = [{
@@ -53,16 +54,31 @@ function buildCharts(sample) {
     
     // build bubble chart
 //   
+    // var bubbleData = [{
+        //     x: otu_ids,
+        //     y: sample_values,
+        //     text:   otu_labels,
+        //     mode: "marker",
+        //     marker: {
+        //         size:   sample_values,
+        //         color:  otu_ids,
+        //         colorscale:"Picnic"
+        //    }
+// }]
+//         var bubbleLayout = {
+//             hovermode:   ""
+             // xaxis: {title:  "OTU ID"}
+//         }
+//         Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
-
-}
-
+// };
+// ################################################################################
 // event listener from html file:<select id="selDataset" onchange="optionChanged(this.value)"></select>
 // build optionChanged function (nextSample = this value)
-function optionChanged(nextSample) {
+function optionChanged(testSample) {
     // grab the data from selector; build using value
-    buildMetadata(nextSample);
-    console.log(nextSample);
+    buildMetadata(testSample);
+    console.log(testSample);
     // buildCharts(nextSample);
 
 }
