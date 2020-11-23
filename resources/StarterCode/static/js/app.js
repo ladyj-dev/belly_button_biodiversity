@@ -30,9 +30,30 @@ function buildCharts(sample) {
     // grab data
     console.log("buildCharts output");
 
-    // build bar chart
+    // build bar chart; using plotly.com/javascript documentation as guide 
+    // var barData = [{
+    //      type: 'bar',
+    //     x:   sample_values.slice(0, 10).reverse(),    
+        // y:   otu_ids.slice(0, 10).map(otuid => 'OTU ${otuid}').reverse(),
+        // text:otu_labels.slice(0, 10).reverse(),
+        // orientation: "h"
+        //  marker:{
+    //      color: "#C8A2C8", 
+    //      width:  0.5
+        // }
+    // }];
+    // var barLayout = {
+    //    //  title: "Top Ten Operational Taxonomic Units", 
+        //    font:{size: 14}
+    // };
+        // var config = {responsive: true}
 
+        // Plotly.newPlot("bar", barData, barLayout);
+        // #############################################
+    
     // build bubble chart
+//   
+
 
 }
 
