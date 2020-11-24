@@ -61,30 +61,42 @@ function buildCharts(sample) {
     // var config = {responsive: true}
 
     Plotly.newPlot("bar", barData, barLayout);
+
+    // #############################################
+
+    // build bubble chart
+    /*Use otu_ids for the x values.
+
+    Use sample_values for the y values.
+
+    Use sample_values for the marker size.
+
+    Use otu_ids for the marker colors.
+
+    Use otu_labels for the text values.
+    */
+    var bubbleData = [{
+        x: samples.otu_ids,
+        y: samples.sample_values,
+        text: samples.otu_labels,
+        mode: "markers",
+        marker: {
+            size: samples.sample_values,
+            color: samples.otu_ids,
+            colorscale:"Picnic"
+        }
+    }];
+
+    var bubbleLayout = {
+        title: "Bacteria Per Sample",
+        hovermode:   "closest",
+        xaxis: {title:  "OTU ID"}
+    };
+
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
   });
 }
-// #############################################
-
-// build bubble chart
-//
-// var bubbleData = [{
-//     x: otu_ids,
-//     y: sample_values,
-//     text:   otu_labels,
-//     mode: "marker",
-//     marker: {
-//         size:   sample_values,
-//         color:  otu_ids,
-//         colorscale:"Picnic"
-//    }
-// }]
-//         var bubbleLayout = {
-//             hovermode:   ""
-// xaxis: {title:  "OTU ID"}
-//         }
-//         Plotly.newPlot("bubble", bubbleData, bubbleLayout);
-
-// };
 
 //  single angular gauge chart
 // var gaugeData = [
