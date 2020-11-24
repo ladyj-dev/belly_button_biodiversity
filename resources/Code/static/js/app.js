@@ -39,6 +39,7 @@ function buildCharts(sample) {
     // ############################################################
 
     // build bar chart; using plotly.com/javascript documentation as guide
+    // reaching into samples from json to pull out items desired
     var ylabel = samples.otu_ids.slice(0,10).map(otuID => `OTU ${(otuID)}`).reverse();
 
     var barData = [
